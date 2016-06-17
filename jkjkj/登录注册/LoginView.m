@@ -163,8 +163,8 @@
         _loginedbtn.backgroundColor=RGB(57, 166, 238);
 //        [_loginedbtn setTitle:@"登录" forState:UIControlStateNormal];
 //        [_loginedbtn setTintColor:[UIColor whiteColor]];
-//        _loginedbtn.layer.masksToBounds=YES;
-//        _loginedbtn.layer.cornerRadius=10.0;
+        _loginedbtn.layer.masksToBounds=YES;
+        _loginedbtn.layer.cornerRadius=10.0;
         
         [_loginedbtn setBackgroundImage:[UIImage imageNamed:@"登录界面登录按钮"] forState:UIControlStateNormal];
         
