@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044EC35B1D13FEEF00D06100 /* RegisteredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044EC35A1D13FEEF00D06100 /* RegisteredViewController.m */; };
+		044EC35E1D14346900D06100 /* RegsitereView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044EC35D1D14346900D06100 /* RegsitereView.m */; };
 		04B895A61D1235B3002ED59E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B895A51D1235B3002ED59E /* main.m */; };
 		04B895A91D1235B3002ED59E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B895A81D1235B3002ED59E /* AppDelegate.m */; };
 		04B895B21D1235B3002ED59E /* jkjkj.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04B895B01D1235B3002ED59E /* jkjkj.xcdatamodeld */; };
@@ -55,6 +57,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		044EC3591D13FEEF00D06100 /* RegisteredViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisteredViewController.h; path = "登录注册/RegisteredViewController.h"; sourceTree = "<group>"; };
+		044EC35A1D13FEEF00D06100 /* RegisteredViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisteredViewController.m; path = "登录注册/RegisteredViewController.m"; sourceTree = "<group>"; };
+		044EC35C1D14346900D06100 /* RegsitereView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegsitereView.h; path = "登录注册/RegsitereView.h"; sourceTree = "<group>"; };
+		044EC35D1D14346900D06100 /* RegsitereView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegsitereView.m; path = "登录注册/RegsitereView.m"; sourceTree = "<group>"; };
 		04B895A11D1235B3002ED59E /* jkjkj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jkjkj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B895A51D1235B3002ED59E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04B895A71D1235B3002ED59E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -264,6 +270,10 @@
 			children = (
 				04B896171D127EC1002ED59E /* LogingViewController.h */,
 				04B896181D127EC1002ED59E /* LogingViewController.m */,
+				044EC3591D13FEEF00D06100 /* RegisteredViewController.h */,
+				044EC35A1D13FEEF00D06100 /* RegisteredViewController.m */,
+				044EC35C1D14346900D06100 /* RegsitereView.h */,
+				044EC35D1D14346900D06100 /* RegsitereView.m */,
 				04B8961A1D128030002ED59E /* LoginView.h */,
 				04B8961B1D128030002ED59E /* LoginView.m */,
 				04B8961D1D128088002ED59E /* AKeyTologIn.h */,
@@ -418,6 +428,7 @@
 				04B896151D127DE0002ED59E /* ViewController+MASAdditions.m in Sources */,
 				04B8960D1D127DE0002ED59E /* MASConstraint.m in Sources */,
 				04B896191D127EC1002ED59E /* LogingViewController.m in Sources */,
+				044EC35B1D13FEEF00D06100 /* RegisteredViewController.m in Sources */,
 				04B895B21D1235B3002ED59E /* jkjkj.xcdatamodeld in Sources */,
 				04B895E71D125041002ED59E /* Time_limitViewController.m in Sources */,
 				04B896121D127DE0002ED59E /* NSArray+MASAdditions.m in Sources */,
@@ -425,6 +436,7 @@
 				04B895ED1D1250A0002ED59E /* Classification ViewController.m in Sources */,
 				04B895E11D124E84002ED59E /* NaviViewController.m in Sources */,
 				04B895A61D1235B3002ED59E /* main.m in Sources */,
+				044EC35E1D14346900D06100 /* RegsitereView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,6 +658,7 @@
 				04B895D31D1235B3002ED59E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04B895D41D1235B3002ED59E /* Build configuration list for PBXNativeTarget "jkjkjTests" */ = {
 			isa = XCConfigurationList;
@@ -654,6 +667,7 @@
 				04B895D61D1235B3002ED59E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04B895D71D1235B3002ED59E /* Build configuration list for PBXNativeTarget "jkjkjUITests" */ = {
 			isa = XCConfigurationList;
@@ -662,6 +676,7 @@
 				04B895D91D1235B3002ED59E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,38 +1,52 @@
 //
-//  LogingViewController.m
+//  RegisteredViewController.m
 //  jkjkj
 //
-//  Created by ma c on 16/6/16.
+//  Created by ma c on 16/6/17.
 //  Copyright © 2016年 SXT. All rights reserved.
 //
 
-#import "LogingViewController.h"
-#import "LoginView.h"
-#import "AKeyTologIn.h"
 #import "RegisteredViewController.h"
+#import "RegsitereView.h"
+#import "AKeyTologIn.h"
 
-@interface LogingViewController ()
-@property(strong,nonatomic)LoginView *loginV;
+
+@interface RegisteredViewController ()
+@property(strong,nonatomic) RegsitereView*redsitereV;
 @property(strong,nonatomic)AKeyTologIn*login;
-
-
 
 @end
 
-@implementation LogingViewController
+@implementation RegisteredViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title=@"注册";
+    UILabel *tishi=[[UILabel alloc]init];
+    tishi.text=@"请输入手机号注册新用户";
+    tishi.textColor=[UIColor blackColor];
+    
+    [self.view addSubview:tishi];
+    
+    
     self.view.backgroundColor=[UIColor groupTableViewBackgroundColor];
     
-    [self.view addSubview:self.loginV];
+    [self.view addSubview:self.redsitereV];
     
     [self.view addSubview:self.login];
     __weak typeof (self)ws=self;
     
-    [self.loginV mas_makeConstraints:^(MASConstraintMaker *make) {
+    [tishi mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(ws.view.mas_top).offset(11);
+        make.left.mas_equalTo(ws.view.mas_left).offset(15);
+        make.height.mas_equalTo(14);
+
+    }];
     
-        make.top.mas_equalTo(ws.view);
+    
+    [self.redsitereV mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.top.mas_equalTo(ws.view.mas_top).offset(35);
         make.left.mas_equalTo(ws.view.mas_left);
         make.right.mas_equalTo(ws.view.mas_right);
         make.height.mas_equalTo(210);
@@ -40,36 +54,22 @@
     }];
     [self.login mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.top.mas_equalTo(ws.loginV.mas_bottom);
+        make.top.mas_equalTo(ws.redsitereV.mas_bottom);
         make.left.mas_equalTo(ws.view.mas_left);
         make.right.mas_equalTo(ws.view.mas_right);
         make.height.mas_equalTo(160);
         
     }];
 
-    
-    [self.loginV.registered addTarget:self action:@selector(returnRegistered) forControlEvents:UIControlEventTouchUpInside];
-    
-    
-    
-    
-    
+
     // Do any additional setup after loading the view.
 }
-
--(void)returnRegistered{
-
-    RegisteredViewController *registereVC=[[RegisteredViewController alloc]init];
-    [self.navigationController pushViewController:registereVC animated:NO];
-}
-
-
--(LoginView *)loginV{
-    if (!_loginV) {
-        _loginV=[[LoginView alloc]init];
+-(RegsitereView *)redsitereV{
+    if (!_redsitereV) {
+        _redsitereV=[[RegsitereView alloc]init];
         
     }
-    return _loginV;
+    return _redsitereV;
     
 }
 
@@ -82,7 +82,6 @@
     return _login;
     
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

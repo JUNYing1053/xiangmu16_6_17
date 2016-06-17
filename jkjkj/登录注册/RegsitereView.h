@@ -1,14 +1,14 @@
 //
-//  LoginView.h
+//  RegsitereView.h
 //  jkjkj
 //
-//  Created by ma c on 16/6/16.
+//  Created by ma c on 16/6/17.
 //  Copyright © 2016年 SXT. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface LoginView : UIView
+@interface RegsitereView : UIView
 
 
 /**背景*/
@@ -19,11 +19,10 @@
 @property(strong,nonatomic)UITextField*paswordText;
 /**分割线*/
 @property(strong,nonatomic)UILabel *lineLabel;
-/**登录按钮*/
-@property(strong,nonatomic)UIButton *loginedbtn;
-/**注册*/
-@property(strong,nonatomic)UIButton *registered;
-
+/**下一步*/
+@property(strong,nonatomic)UIButton *nextbtn;
+/**去登陆*/
+@property(strong,nonatomic)UIButton *TOlogin;
 
 
 
