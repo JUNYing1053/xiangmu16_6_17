@@ -35,7 +35,10 @@
         self.backgroundColor=[UIColor groupTableViewBackgroundColor];
         NSLog(@"sdsd");
         
-        
+        NSLog(@"sdsd");
+        NSLog(@"sdsd");
+        NSLog(@"sdsd");
+
         
         [self addSubview:self.backLabel];
         [self addSubview:self.nameText];
