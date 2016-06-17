@@ -33,6 +33,9 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor=[UIColor groupTableViewBackgroundColor];
+        NSLog(@"sdsd");
+        
+        
         
         [self addSubview:self.backLabel];
         [self addSubview:self.nameText];
