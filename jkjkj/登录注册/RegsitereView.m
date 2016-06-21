@@ -148,13 +148,13 @@
 {
     if (!_nextbtn) {
         _nextbtn=[[UIButton alloc]init];
-        _nextbtn.backgroundColor=[UIColor grayColor];
-                [_nextbtn setTitle:@"下一步" forState:UIControlStateNormal];
-                [_nextbtn setTintColor:[UIColor blackColor]];
+//        _nextbtn.backgroundColor=[UIColor grayColor];
+//                [_nextbtn setTitle:@"下一步" forState:UIControlStateNormal];
+//                [_nextbtn setTintColor:[UIColor blackColor]];
         _nextbtn.layer.masksToBounds=YES;
         _nextbtn.layer.cornerRadius=10.0;
         
-//        [_nextbtn setBackgroundImage:[UIImage imageNamed:@"登录界面登录按钮"] forState:UIControlStateNormal];
+        [_nextbtn setBackgroundImage:[UIImage imageNamed:@"注册界面下一步按钮"] forState:UIControlStateNormal];
         
         
         
@@ -183,7 +183,7 @@
 {
     [self.nameText resignFirstResponder];
     [self.paswordText resignFirstResponder];
-    return YES;
+    return NO;
 }
 
 

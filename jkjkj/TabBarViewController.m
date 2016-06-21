@@ -52,7 +52,7 @@
     
     self.viewControllers=countArray;
     
-    self.selectedIndex=0;
+    self.selectedIndex=0;//默认选中
     
 }
 

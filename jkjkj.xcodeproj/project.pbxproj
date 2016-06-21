@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0423D12D1D1781B3008FE791 /* MYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423D12C1D1781B3008FE791 /* MYViewController.m */; };
+		0423D1321D178298008FE791 /* TableVIewTop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423D1311D178298008FE791 /* TableVIewTop.m */; };
+		0423D1351D179CDA008FE791 /* Tabview.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423D1341D179CDA008FE791 /* Tabview.m */; };
+		0423D1371D17CFB7008FE791 /* MYviewList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0423D1361D17CFB7008FE791 /* MYviewList.plist */; };
+		0423D13A1D17E235008FE791 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423D1391D17E235008FE791 /* TableViewCell.m */; };
 		044EC35B1D13FEEF00D06100 /* RegisteredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044EC35A1D13FEEF00D06100 /* RegisteredViewController.m */; };
 		044EC35E1D14346900D06100 /* RegsitereView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044EC35D1D14346900D06100 /* RegsitereView.m */; };
 		04B895A61D1235B3002ED59E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B895A51D1235B3002ED59E /* main.m */; };
@@ -19,7 +24,6 @@
 		04B895DB1D123CCA002ED59E /* TabBar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04B895DA1D123CCA002ED59E /* TabBar.plist */; };
 		04B895DE1D123D20002ED59E /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B895DD1D123D20002ED59E /* TabBarViewController.m */; };
 		04B895E11D124E84002ED59E /* NaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B895E01D124E84002ED59E /* NaviViewController.m */; };
-		04B895E41D12501A002ED59E /* MYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B895E31D12501A002ED59E /* MYViewController.m */; };
 		04B895E71D125041002ED59E /* Time_limitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B895E61D125041002ED59E /* Time_limitViewController.m */; };
 		04B895EA1D12507D002ED59E /* ShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B895E91D12507D002ED59E /* ShoppingCartViewController.m */; };
 		04B895ED1D1250A0002ED59E /* Classification ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B895EC1D1250A0002ED59E /* Classification ViewController.m */; };
@@ -57,6 +61,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0423D12B1D1781B3008FE791 /* MYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYViewController.h; path = "我的/MYViewController.h"; sourceTree = "<group>"; };
+		0423D12C1D1781B3008FE791 /* MYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MYViewController.m; path = "我的/MYViewController.m"; sourceTree = "<group>"; };
+		0423D1301D178298008FE791 /* TableVIewTop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableVIewTop.h; path = "我的/我的view/TableVIewTop.h"; sourceTree = "<group>"; };
+		0423D1311D178298008FE791 /* TableVIewTop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableVIewTop.m; path = "我的/我的view/TableVIewTop.m"; sourceTree = "<group>"; };
+		0423D1331D179CDA008FE791 /* Tabview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tabview.h; path = "我的/我的view/Tabview.h"; sourceTree = "<group>"; };
+		0423D1341D179CDA008FE791 /* Tabview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tabview.m; path = "我的/我的view/Tabview.m"; sourceTree = "<group>"; };
+		0423D1361D17CFB7008FE791 /* MYviewList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MYviewList.plist; path = "我的/我的view/MYviewList.plist"; sourceTree = "<group>"; };
+		0423D1381D17E235008FE791 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewCell.h; path = "我的/我的view/TableViewCell.h"; sourceTree = "<group>"; };
+		0423D1391D17E235008FE791 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewCell.m; path = "我的/我的view/TableViewCell.m"; sourceTree = "<group>"; };
 		044EC3591D13FEEF00D06100 /* RegisteredViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisteredViewController.h; path = "登录注册/RegisteredViewController.h"; sourceTree = "<group>"; };
 		044EC35A1D13FEEF00D06100 /* RegisteredViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisteredViewController.m; path = "登录注册/RegisteredViewController.m"; sourceTree = "<group>"; };
 		044EC35C1D14346900D06100 /* RegsitereView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegsitereView.h; path = "登录注册/RegsitereView.h"; sourceTree = "<group>"; };
@@ -80,8 +93,6 @@
 		04B895DD1D123D20002ED59E /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		04B895DF1D124E84002ED59E /* NaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaviViewController.h; sourceTree = "<group>"; };
 		04B895E01D124E84002ED59E /* NaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaviViewController.m; sourceTree = "<group>"; };
-		04B895E21D12501A002ED59E /* MYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYViewController.h; sourceTree = "<group>"; };
-		04B895E31D12501A002ED59E /* MYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYViewController.m; sourceTree = "<group>"; };
 		04B895E51D125041002ED59E /* Time_limitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Time_limitViewController.h; sourceTree = "<group>"; };
 		04B895E61D125041002ED59E /* Time_limitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Time_limitViewController.m; sourceTree = "<group>"; };
 		04B895E81D12507D002ED59E /* ShoppingCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartViewController.h; sourceTree = "<group>"; };
@@ -148,6 +159,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0423D12A1D17811B008FE791 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				0423D12B1D1781B3008FE791 /* MYViewController.h */,
+				0423D12C1D1781B3008FE791 /* MYViewController.m */,
+				0423D12F1D1781CF008FE791 /* 我的view */,
+			);
+			name = "我的";
+			sourceTree = "<group>";
+		};
+		0423D12F1D1781CF008FE791 /* 我的view */ = {
+			isa = PBXGroup;
+			children = (
+				0423D1301D178298008FE791 /* TableVIewTop.h */,
+				0423D1311D178298008FE791 /* TableVIewTop.m */,
+				0423D1331D179CDA008FE791 /* Tabview.h */,
+				0423D1341D179CDA008FE791 /* Tabview.m */,
+				0423D1381D17E235008FE791 /* TableViewCell.h */,
+				0423D1391D17E235008FE791 /* TableViewCell.m */,
+				0423D1361D17CFB7008FE791 /* MYviewList.plist */,
+			);
+			name = "我的view";
+			sourceTree = "<group>";
+		};
 		04B895981D1235B3002ED59E = {
 			isa = PBXGroup;
 			children = (
@@ -171,14 +206,13 @@
 		04B895A31D1235B3002ED59E /* jkjkj */ = {
 			isa = PBXGroup;
 			children = (
+				0423D12A1D17811B008FE791 /* 我的 */,
 				04B895A71D1235B3002ED59E /* AppDelegate.h */,
 				04B895A81D1235B3002ED59E /* AppDelegate.m */,
 				04B895DC1D123D20002ED59E /* TabBarViewController.h */,
 				04B895DD1D123D20002ED59E /* TabBarViewController.m */,
 				04B895DF1D124E84002ED59E /* NaviViewController.h */,
 				04B895E01D124E84002ED59E /* NaviViewController.m */,
-				04B895E21D12501A002ED59E /* MYViewController.h */,
-				04B895E31D12501A002ED59E /* MYViewController.m */,
 				04B895E51D125041002ED59E /* Time_limitViewController.h */,
 				04B895E61D125041002ED59E /* Time_limitViewController.m */,
 				04B895E81D12507D002ED59E /* ShoppingCartViewController.h */,
@@ -386,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B8960B1D127DE0002ED59E /* Info.plist in Resources */,
+				0423D1371D17CFB7008FE791 /* MYviewList.plist in Resources */,
 				04B895B71D1235B3002ED59E /* LaunchScreen.storyboard in Resources */,
 				04B895B41D1235B3002ED59E /* Assets.xcassets in Resources */,
 				04B895DB1D123CCA002ED59E /* TabBar.plist in Resources */,
@@ -413,14 +448,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0423D1321D178298008FE791 /* TableVIewTop.m in Sources */,
 				04B8961F1D128088002ED59E /* AKeyTologIn.m in Sources */,
 				04B896111D127DE0002ED59E /* MASViewConstraint.m in Sources */,
 				04B895EA1D12507D002ED59E /* ShoppingCartViewController.m in Sources */,
 				04B896101D127DE0002ED59E /* MASViewAttribute.m in Sources */,
-				04B895E41D12501A002ED59E /* MYViewController.m in Sources */,
 				04B895DE1D123D20002ED59E /* TabBarViewController.m in Sources */,
 				04B895A91D1235B3002ED59E /* AppDelegate.m in Sources */,
 				04B8960C1D127DE0002ED59E /* MASCompositeConstraint.m in Sources */,
+				0423D1351D179CDA008FE791 /* Tabview.m in Sources */,
 				04B8960E1D127DE0002ED59E /* MASConstraintMaker.m in Sources */,
 				04B896141D127DE0002ED59E /* View+MASAdditions.m in Sources */,
 				04B8961C1D128030002ED59E /* LoginView.m in Sources */,
@@ -432,7 +468,9 @@
 				04B895B21D1235B3002ED59E /* jkjkj.xcdatamodeld in Sources */,
 				04B895E71D125041002ED59E /* Time_limitViewController.m in Sources */,
 				04B896121D127DE0002ED59E /* NSArray+MASAdditions.m in Sources */,
+				0423D12D1D1781B3008FE791 /* MYViewController.m in Sources */,
 				04B896131D127DE0002ED59E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				0423D13A1D17E235008FE791 /* TableViewCell.m in Sources */,
 				04B895ED1D1250A0002ED59E /* Classification ViewController.m in Sources */,
 				04B895E11D124E84002ED59E /* NaviViewController.m in Sources */,
 				04B895A61D1235B3002ED59E /* main.m in Sources */,

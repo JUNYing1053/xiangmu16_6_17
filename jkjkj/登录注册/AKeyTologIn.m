@@ -12,9 +12,9 @@
 ///biaoti
 @property(strong,nonatomic)UILabel *lineLabel;
 @property(strong,nonatomic)UILabel *WordLabel;
-@property(strong,nonatomic)UIImageView*QQimageV;
-@property(strong,nonatomic)UIImageView*WeiimageV;
-@property(strong,nonatomic)UIImageView*XinlangimageV;
+@property(strong,nonatomic)UIButton*QQimageV;
+@property(strong,nonatomic)UIButton*WeiimageV;
+@property(strong,nonatomic)UIButton*XinlangimageV;
 
 
 
@@ -105,35 +105,36 @@
     return _WordLabel;
 }
 
--(UIImageView *)QQimageV
+-(UIButton *)QQimageV
 {
     
     if (!_QQimageV) {
-        _QQimageV=[[UIImageView alloc]init];
-        _QQimageV.image=[UIImage imageNamed:@"登录界面qq登陆"];
+        _QQimageV=[[UIButton alloc]init];
+        [_QQimageV setBackgroundImage:[UIImage imageNamed:@"登录界面qq登陆"] forState:UIControlStateNormal ];
         
     }
     return _QQimageV;
     
 }
 
--(UIImageView *)WeiimageV
+-(UIButton *)WeiimageV
 {
     
     if (!_WeiimageV) {
-        _WeiimageV=[[UIImageView alloc]init];
-        _WeiimageV.image=[UIImage imageNamed:@"登录界面微信登录"];
+        _WeiimageV=[[UIButton alloc]init];
+        [_WeiimageV setBackgroundImage: [UIImage imageNamed:@"登录界面微信登录"]forState:UIControlStateNormal];
+        
     }
     return _WeiimageV;
     
 }
 
--(UIImageView *)XinlangimageV
+-(UIButton *)XinlangimageV
 {
     
     if (!_XinlangimageV) {
-        _XinlangimageV=[[UIImageView alloc]init];
-        _XinlangimageV.image=[UIImage imageNamed:@"登陆界面微博登录"];
+        _XinlangimageV=[[UIButton alloc]init];
+        [_XinlangimageV setBackgroundImage:[UIImage imageNamed:@"登陆界面微博登录"] forState:UIControlStateNormal];
     }
     return _XinlangimageV;
     
