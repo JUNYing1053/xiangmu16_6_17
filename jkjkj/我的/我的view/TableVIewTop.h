@@ -18,5 +18,6 @@
 
 -(void)NOLogin;
 -(void)Login;
+- (void)showLandingAndLoginBtn:(NSDictionary *)dic;
 
 @end

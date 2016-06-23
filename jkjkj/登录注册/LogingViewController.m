@@ -10,6 +10,10 @@
 #import "LoginView.h"
 #import "AKeyTologIn.h"
 #import "RegisteredViewController.h"
+#import "UMSocial.h"
+#import "ThirdParty.h"
+#import "IslogingTo.h"
+#import "MYViewController.h"
 
 @interface LogingViewController ()
 @property(strong,nonatomic)LoginView *loginV;
@@ -50,12 +54,104 @@
     
     [self.loginV.registered addTarget:self action:@selector(returnRegistered) forControlEvents:UIControlEventTouchUpInside];
     
+    [self.loginV.loginedbtn addTarget:self action:@selector(toHttpLoging) forControlEvents:UIControlEventTouchUpInside];
     
+    
+   [ self.login.QQimageV addTarget:self action:@selector(QQlonging) forControlEvents:UIControlEventTouchUpInside];
+    [self.login.WeiimageV addTarget:self action:@selector(weixinlonging) forControlEvents:UIControlEventTouchUpInside];
+    [self.login.XinlangimageV addTarget:self action:@selector(xinalanglonging) forControlEvents:UIControlEventTouchUpInside];
+
     
     
     
     // Do any additional setup after loading the view.
 }
+
+
+
+-(void)toHttpLoging{
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/plain"];
+    
+    // 17721025595  ***123123
+    NSDictionary* dict=@{@"LoginName":self.loginV.nameText.text,
+                         @"Lpassword":self.loginV.paswordText.text,
+                         @"CouponsId":@""
+                         };
+    
+    WS(wakeself);
+    [manager GET:LoginURL parameters:dict progress:^(NSProgress * _Nonnull downloadProgress) {
+        NSLog(@"正在请求数据");
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+
+        NSDictionary *dic=responseObject;
+                NSLog(@"请求完成");
+
+        NSNotification * notice =[NSNotification notificationWithName:@"notice" object:nil userInfo:dict];
+        //发送消息
+        [[NSNotificationCenter defaultCenter]postNotification:notice];
+
+        if ([dic[@"ErrorMessage"] isEqualToString:@"登陆成功"]) {
+            
+
+            [[NSUserDefaults standardUserDefaults] setValue:dic forKey:@"IsLogin"];
+            
+            wakeself .tabBarItem.badgeValue=[NSString stringWithFormat:@"%@",dic[@"result"]];
+            [SVProgressHUD showImage:nil status:dic[@"ErrorMessage"]];
+
+            
+            
+            [wakeself.navigationController popViewControllerAnimated:NO];
+        
+            
+            
+        }
+        else{
+            [SVProgressHUD showImage:nil status:dic[@"ErrorMessage"]];
+            
+            
+        }
+        
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"-==-=-=-=%@",error.localizedDescription);
+        
+    }];
+    
+
+    
+
+}
+
+
+-(void)QQlonging{
+    [ThirdParty QQlongingTO:self witch:^(NSDictionary *returnDict) {
+        NSLog(@"returnDic is  :  %@",returnDict);
+        
+    }];
+    
+}
+
+-(void)weixinlonging{
+    [ThirdParty weixinlongingTO:self witch:^(NSDictionary *returnDict) {
+        NSLog(@"returnDic is  :  %@",returnDict);
+
+    }];
+}
+
+
+-(void)xinalanglonging{
+    [ThirdParty weiblongingTO:self witch:^(NSDictionary *returnDict) {
+        NSLog(@"returnDic is  :  %@",returnDict);
+
+    }];
+}
+
+
+
+
+
 
 -(void)returnRegistered{
 

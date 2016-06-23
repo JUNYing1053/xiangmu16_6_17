@@ -10,7 +10,7 @@
 		<key>imaged</key>
 		<string>菜单栏限时特卖按钮选中状态</string>
 		<key>ViewController</key>
-		<string>LogingViewController</string>
+		<string>Time_limitViewController</string>
 	</dict>
 	<dict>
 		<key>name</key>

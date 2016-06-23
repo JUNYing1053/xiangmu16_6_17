@@ -9,7 +9,7 @@
 #import "RegisteredViewController.h"
 #import "RegsitereView.h"
 #import "AKeyTologIn.h"
-
+#import "ThirdParty.h"
 
 @interface RegisteredViewController ()
 @property(strong,nonatomic) RegsitereView*redsitereV;
@@ -43,7 +43,6 @@
 
     }];
     
-    
     [self.redsitereV mas_makeConstraints:^(MASConstraintMaker *make) {
         
         make.top.mas_equalTo(ws.view.mas_top).offset(35);
@@ -61,9 +60,49 @@
         
     }];
 
+    
+    
+    
+    [ self.login.QQimageV addTarget:self action:@selector(QQlonging) forControlEvents:UIControlEventTouchUpInside];
+    [self.login.WeiimageV addTarget:self action:@selector(weixinlonging) forControlEvents:UIControlEventTouchUpInside];
+    [self.login.XinlangimageV addTarget:self action:@selector(xinalanglonging) forControlEvents:UIControlEventTouchUpInside];
+    
+
+    
+    
 
     // Do any additional setup after loading the view.
 }
+
+-(void)QQlonging{
+    [ThirdParty QQlongingTO:self witch:^(NSDictionary *returnDict) {
+        NSLog(@"returnDic is  :  %@",returnDict);
+        
+    }];
+    
+}
+
+-(void)weixinlonging{
+    [ThirdParty weixinlongingTO:self witch:^(NSDictionary *returnDict) {
+        NSLog(@"returnDic is  :  %@",returnDict);
+        
+    }];
+}
+
+
+-(void)xinalanglonging{
+    [ThirdParty weiblongingTO:self witch:^(NSDictionary *returnDict) {
+        NSLog(@"returnDic is  :  %@",returnDict);
+        
+    }];
+}
+
+
+
+
+
+
+
 -(RegsitereView *)redsitereV{
     if (!_redsitereV) {
         _redsitereV=[[RegsitereView alloc]init];

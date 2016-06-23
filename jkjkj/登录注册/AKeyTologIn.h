@@ -10,6 +10,12 @@
 
 @interface AKeyTologIn : UIView
 
+@property(strong,nonatomic)UILabel *lineLabel;
+@property(strong,nonatomic)UILabel *WordLabel;
+@property(strong,nonatomic)UIButton*QQimageV;
+@property(strong,nonatomic)UIButton*WeiimageV;
+@property(strong,nonatomic)UIButton*XinlangimageV;
+
 
 
 

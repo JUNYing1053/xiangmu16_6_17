@@ -7,32 +7,57 @@
 //
 
 #import "TableVIewTop.h"
-
+#import "SVProgressHUD.h"
 @implementation TableVIewTop
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
+        [self addSubview: self.BackeImageview];
         
-       [self NOLogin];
-        
-//        [self Login];
-    }
+        [self.BackeImageview mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.and.left.and.bottom.right.mas_equalTo(self);
+
+        }];
+
+           }
     return self;
+}
+
+- (void)showLandingAndLoginBtn:(NSDictionary *)dic{
+    NSDictionary *islogin= dic;
+    if ( islogin ==0) {
+        
+        [self NOLogin];
+        self.OneLabel.hidden=YES;
+        self.TwoLabel.hidden=YES;
+        self.imageview.hidden=YES;
+        self.OneBtn.hidden=NO;
+        self.TwoBrn.hidden=NO;
+
+        
+    }else{
+        
+        [self Login];
+        self.OneLabel.hidden=NO;
+        self.TwoLabel.hidden=NO;
+        self.imageview.hidden=NO;
+        self.OneBtn.hidden=YES;
+        self.TwoBrn.hidden=YES;
+        self.OneLabel.text=dic[@"MemberName"];
+        self.TwoLabel.text=dic[@"MemberLvl"];
+
+    }
+
 }
 
 -(void)NOLogin
 {
-    [self addSubview: self.BackeImageview];
     [self addSubview:self.OneBtn];
     [self addSubview:self.TwoBrn];
     __weak typeof (self)WS=self;
     
     
-    [self.BackeImageview mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.and.left.and.bottom.right.mas_equalTo(WS);
-        
-    }];
     [self.OneBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(WS.mas_centerY);
         make.left.mas_equalTo(WS.mas_centerX).offset(-100);
@@ -59,7 +84,6 @@
 }
 -(void)Login
 {
-    [self addSubview: self.BackeImageview];
     [self addSubview:self.imageview];
     [self addSubview:self.OneLabel];
     [self addSubview:self.TwoLabel];
@@ -67,15 +91,12 @@
     __weak typeof (self)WS=self;
     
     
-    [self.BackeImageview mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.and.left.and.bottom.right.mas_equalTo(WS);
-        
-    }];
+    
     [self.imageview mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(WS.BackeImageview.mas_top).offset(25);
-        make.bottom.mas_equalTo(WS.BackeImageview.mas_bottom).offset(-25);
         make.left.mas_equalTo(WS.BackeImageview.mas_left).offset(57);
         make.width.mas_equalTo(77);
+        make.height.mas_equalTo(77);
         
         
 

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TableVIewTop.h"
+#import "Tabvieww.h"
+#import "LogingViewController.h"
+#import "RegisteredViewController.h"
 @interface MYViewController : UIViewController
+@property(strong,nonatomic) Tabvieww *tab;
 
 @end
